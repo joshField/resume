@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\pagestyle{fancy}
+\fancyhf{}
+%\newcommand{\address}{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Joshua}{Field}{ 
+{\textcolor{black}{\href{joshafield.com}{http://joshafield.com}} | \href{mailto:joshfield999@gmail.com}{joshfield99@gmail.com} | 626.616.6321}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\runsubsection{Northeastern University}
+\descript{| Candidate for BS in Electrical \& Computer Engineering}
+\vspace{0.5mm} %fix for vertical space
+\location{GPA: \custombold{N/A} | Graduation Date : \custombold{June 2021}}
+\vspace{0.5mm}
+\begin{tightemize}
+\item[] \custombold{Relevant Courses:} Cornerstone 1 \& 2 | Calculus 2
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Arcadia High School}
+\vspace{0.5mm} %fix for vertical space
+\descript{}
+\location{GPA: \custombold{3.93} | Graduation Date : \custombold{June 2017}}
+\vspace{0.5mm}
+\begin{tightemize}
+\item[] \custombold{Relevant Courses:}AP Calculus AB | AP Physics C | AP Chemistry | AP Computer Science A | AP Comparative Government | AP English Literature
+\item[] \custombold{SAT(old): } 2120
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Northeastern University ResMail}
+\descript{| Mail Services Associate }
+\location{October 2017 – December 2017 | Boston, MA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Sorted and delivered mail. Also audited \& updated the computerized \custombold{database.} 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Arcadia High School Marching Band}
+\descript{| Trumpet Section Leader }
+\location{August 2016 – June 2017 | Arcadia, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Led trumpet section practices \& instructed peers and younger members. Also organized section events. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Eagle Scout}
+\descript{| Troop 104 Senior Patrol \& Instructor }
+\location{August 2013 – June 2017 | Arcadia, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Was awarded the rank of \custombold{Eagle Scout} in February 2017. Led multiple troop meetings of \custombold{70+ scouts.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Johns Hopkins Engineering Innovation}
+\descript{| Summer Course}
+\location{June 2016 – August 2016 | Pasadena, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Used \custombold{truss analysis} to create the strongest spaghetti bridge.
+\item \custombold{Reverse engineered} a light sensing robot to create \custombold{logic tables} and program our own robots.
+\item Created fictional \custombold{Request For Proposal} presentations.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTIVITIES & AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities \& Awards}
+\runsubsection{National Merit Commended Scholar}
+\descript{| 2017}
+\vspace{0.5mm}
+\begin{tightemize}
+\item[] Was awarded to the \custombold{top 3.3\%} of students nationally
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Varsity Soccer Goalkeeper}
+\descript{| Arcadia High School 2016 - 2017}
+\vspace{0.5mm}
+\begin{tightemize}
+\item[] Arcadia Winter Cup 2017 \custombold{Champions}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{3rd Degree Black Belt}
+\descript{| Taekwondo June 2006 - August 2014}
+\vspace{0.5mm}
+\begin{tightemize}
+\item[] With \custombold{100+ hours} of volunteer instruction
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS-----------SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \renewcommand{\arraystretch}{0}
+% \begin{tabularx}{\textwidth}{@{}XXl@{}@{}r@{}}
+% \section{Projects} & \section{Skills} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{minipage}[t]{8cm}
+
+% \section{Projects}
+
+% \runsubsection{Piezoelectric Keyboard}
+% \descript{}
+% \vspace{0.15mm}
+% %\position{ } \\
+% \begin{tightemize}
+% \item Used \custombold{piezoelectric sensors}. Built a \custombold{full-wave diode rectifier} \& a \custombold{voltage/amperage} sensor to measure the power generated.
+% \item Used \custombold{SolidWorks} and \custombold{AutoCAD} to construct the piezoelectric sensor array \& case. 
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\runsubsection{Programming}
+\location{}
+\vspace{0.5mm}
+\begin{tightemize}
+\item[] Java \textbullet{} JavaScript \textbullet{} Matlab \textbullet{} Python \\
+Ruby on Rails \textbullet{} \LaTeX \textbullet{} C++ \textbullet{} CSS
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Computer}
+\location{}
+\vspace{0.5mm}
+\begin{tightemize}
+\item[] SolidWorks \textbullet{} AutoCAD \textbullet{} Microsoft Office Suite \\
+Adobe Photoshop \textbullet{} Adobe Lightroom
+\end{tightemize}
+\sectionsep
+
+%\end{minipage}
+%\end{tabularx}
+\end{document}
