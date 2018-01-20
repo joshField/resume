@@ -1,65 +1,66 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Joshua Field - Latex Resume 
-% Version 1.1 (12/13/2017)
-%
-% TODO:
-% 1.Add double column at the bottom for projects
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Version 1.2 (1/20/2018)
 
-\documentclass[]{deedy-resume-openfont}
+\documentclass{resume}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \pagestyle{fancy}
 \fancyhf{}
-%\newcommand{\address}{}
+
+% Creates the lines by Projects and Skills
+\makeatletter
+\def\@oddhead{%
+\setlength\unitlength{1mm}%
+\begin{picture}(0,0)%
+\put(58.8,-228.05){\makebox[\linewidth]{\rule{7.3cm}{0.4pt}}}%
+\put(-34,-228.05){\makebox[\linewidth]{\rule{6.1cm}{0.4pt}}}%
+\end{picture}\hfill}
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     TITLE NAME
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Name Section
 \namesection{Joshua}{Field}{ 
-{\textcolor{black}{\href{joshafield.com}{http://joshafield.com}} | \href{mailto:joshfield999@gmail.com}{joshfield99@gmail.com} | 626.616.6321}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%add website link once it is up
+% {\textcolor{black}{\href{joshafield.com}{http://joshafield.com}} | \href{mailto:joshfield999@gmail.com}{joshfield99@gmail.com} | 626.616.6321}}
+\href{mailto:joshfield99@gmail.com}{joshfield99@gmail.com} | 626.616.6320}
 
+% Education Section
 \section{Education}
-
 \runsubsection{Northeastern University}
 \descript{| Candidate for BS in Electrical \& Computer Engineering}
-\vspace{0.5mm} %fix for vertical space
-\location{GPA: \custombold{N/A} | Graduation Date : \custombold{June 2021}}
+\vspace{0.5mm} 
+\location{GPA: \custombold{3.92} | Graduation Date : \custombold{April 2021}}
 \vspace{0.5mm}
 \begin{tightemize}
-\item[] \custombold{Relevant Courses:} Cornerstone 1 \& 2 | Calculus 2
+\item[] \custombold{Relevant Courses:} Engineering Cornerstone 1 \& 2 | Calculus 2 | Differential Equations | Robotics
+\item[] \custombold{Clubs:} ChemE Car | IEEE | AIAA
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Arcadia High School}
-\vspace{0.5mm} %fix for vertical space
+\vspace{0.5mm} 
 \descript{}
-\location{GPA: \custombold{3.93} | Graduation Date : \custombold{June 2017}}
+\location{GPA: \custombold{3.93} | SAT (old): \custombold{2120} | Graduation Date : \custombold{June 2017}}
 \vspace{0.5mm}
 \begin{tightemize}
 \item[] \custombold{Relevant Courses:}AP Calculus AB | AP Physics C | AP Chemistry | AP Computer Science A | AP Comparative Government | AP English Literature
-\item[] \custombold{SAT(old): } 2120
+\item[] \custombold{Activities: } Boy Scouts | Marching Band Section Leader | Varsity Goalkeeper | Taekwondo 3rd Degree Black Belt 
 \end{tightemize}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Experience Section
 \section{Experience}
+\runsubsection{College of Engineering Connections Computer Lab}
+\descript{| Lab Assistant}
+\location{January 2018 – April 2018 | Boston, MA}
+\begin{tightemize}\item Run the head desk. Assist with general IT help.
+\end{tightemize}
+\sectionsep
 
 \runsubsection{Northeastern University ResMail}
 \descript{| Mail Services Associate }
 \location{October 2017 – December 2017 | Boston, MA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}\item Sorted and delivered mail. Also audited \& updated the computerized \custombold{database.} 
 \end{tightemize}
 \sectionsep
@@ -67,35 +68,21 @@
 \runsubsection{Arcadia High School Marching Band}
 \descript{| Trumpet Section Leader }
 \location{August 2016 – June 2017 | Arcadia, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}\item Led trumpet section practices \& instructed peers and younger members. Also organized section events. 
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Eagle Scout}
-\descript{| Troop 104 Senior Patrol \& Instructor }
-\location{August 2013 – June 2017 | Arcadia, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item Was awarded the rank of \custombold{Eagle Scout} in February 2017. Led multiple troop meetings of \custombold{70+ scouts.}
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Johns Hopkins Engineering Innovation}
 \descript{| Summer Course}
 \location{June 2016 – August 2016 | Pasadena, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Used \custombold{truss analysis} to create the strongest spaghetti bridge.
 \item \custombold{Reverse engineered} a light sensing robot to create \custombold{logic tables} and program our own robots.
-\item Created fictional \custombold{Request For Proposal} presentations.
 \end{tightemize}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     ACTIVITIES & AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Activities \& Awards}
+% Award Section
+\section{Awards}
 \runsubsection{National Merit Commended Scholar}
 \descript{| 2017}
 \vspace{0.5mm}
@@ -104,59 +91,45 @@
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Varsity Soccer Goalkeeper}
-\descript{| Arcadia High School 2016 - 2017}
+\runsubsection{Eagle Scout}
+\descript{| 2017}
 \vspace{0.5mm}
 \begin{tightemize}
-\item[] Arcadia Winter Cup 2017 \custombold{Champions}
+\item[] Was awarded the rank of \custombold{Eagle Scout} in February 2017. Led multiple troop meetings of \custombold{70+ scouts.}
 \end{tightemize}
 \sectionsep
 
-\runsubsection{3rd Degree Black Belt}
-\descript{| Taekwondo June 2006 - August 2014}
+\runsubsection{AP Scholar with Distinction}
+\descript{| 2017}
 \vspace{0.5mm}
 \begin{tightemize}
-\item[] With \custombold{100+ hours} of volunteer instruction
+\item[] Was awarded for having higher than a 3.5 average AP test score for more than 5 tests.
 \end{tightemize}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS-----------SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \renewcommand{\arraystretch}{0}
-% \begin{tabularx}{\textwidth}{@{}XXl@{}@{}r@{}}
-% \section{Projects} & \section{Skills} \\
+% Creates double column section
+\renewcommand{\arraystretch}{0}
+\begin{tabularx}{\textwidth}{@{}XXl@{}@{}r@{}}
+\section{Projects} & \section{Skills} \\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Project Section
+\runsubsection{Piezoelectric Keyboard}
+\location{}
+\vspace{0.5mm}
+\technologies{C, Arduino, Solidworks, AutoCAD}\\
+\begin{tightemize}
+\item Used \custombold{piezoelectric sensors}. Built a \custombold{full-wave diode rectifier} \& coded an \custombold{Arduino} to measure the power generated.
+\end{tightemize}
+\sectionsep
 
-%\begin{minipage}[t]{8cm}
-
-% \section{Projects}
-
-% \runsubsection{Piezoelectric Keyboard}
-% \descript{}
-% \vspace{0.15mm}
-% %\position{ } \\
-% \begin{tightemize}
-% \item Used \custombold{piezoelectric sensors}. Built a \custombold{full-wave diode rectifier} \& a \custombold{voltage/amperage} sensor to measure the power generated.
-% \item Used \custombold{SolidWorks} and \custombold{AutoCAD} to construct the piezoelectric sensor array \& case. 
-% \end{tightemize}
-% \sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-
+% Skills Section
+&
 \runsubsection{Programming}
 \location{}
 \vspace{0.5mm}
 \begin{tightemize}
-\item[] \custombold{Skilled in:} Java \textbullet{} C++ \\
-\custombold{Familiar with:} Python \textbullet{} HTML \textbullet{} CSS \textbullet{} \LaTeX \textbullet{} Matlab
+\item Java, C++ \\
+\item Familiar with Python, HTML, CSS, \LaTeX, Matlab
 \end{tightemize}
 \sectionsep
 
@@ -164,11 +137,11 @@
 \location{}
 \vspace{0.5mm}
 \begin{tightemize}
-\item[] SolidWorks \textbullet{} AutoCAD \textbullet{} Microsoft Office Suite \\
-Adobe Photoshop \textbullet{} Adobe Lightroom
+\item SolidWorks, AutoCAD, Microsoft Office Suite, \\
+Adobe Photoshop, Adobe Lightroom
 \end{tightemize}
 \sectionsep
 
-%\end{minipage}
-%\end{tabularx}
+\end{tabularx}
+
 \end{document}

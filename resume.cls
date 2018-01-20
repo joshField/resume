@@ -1,5 +1,5 @@
 % Intro Options
-\ProvidesClass{deedy-resume-openfont}[2014/04/30 CV class]
+\ProvidesClass{resume}
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
@@ -14,9 +14,7 @@
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage[absolute]{textpos}
-\usepackage[UKenglish]{babel}
-\usepackage[UKenglish]{isodate}
-\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{fontawesome}
 \usepackage{tabularx}
 
 % Color definitions
@@ -24,6 +22,7 @@
 \definecolor{primary}{HTML}{2b2b2b} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
+\definecolor{technologies}{HTML}{444444}
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
@@ -78,4 +77,8 @@ Last Updated on
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+
+% Technologies command
+\newcommand{\technologies}[1]{\vspace{0.5mm}\color{technologies}
+\fontspec[Path = fonts/raleway/]{Raleway-Italic}\fontsize{10pt}{12pt}\selectfont{#1} \normalfont\vspace{0.5mm}}
 
