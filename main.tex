@@ -1,145 +1,161 @@
 % Joshua Field - Latex Resume 
-% Version 1.2 (1/20/2018)
+% Version 2.0 (8/12/2018)
 
 \documentclass{resume}
-\usepackage{fancyhdr}
-\usepackage{titlesec}
-\pagestyle{fancy}
-\fancyhf{}
-
-% Creates the lines by Projects and Skills
-\makeatletter
-\def\@oddhead{%
-\setlength\unitlength{1mm}%
-\begin{picture}(0,0)%
-\put(58.8,-228.05){\makebox[\linewidth]{\rule{7.3cm}{0.4pt}}}%
-\put(-34,-228.05){\makebox[\linewidth]{\rule{6.1cm}{0.4pt}}}%
-\end{picture}\hfill}
-
+\pagenumbering{gobble}
 \begin{document}
 
-% Name Section
-\namesection{Joshua}{Field}{ 
 
-\textcolor{black}{\href{http://joshafield.com}{http://joshafield.com}} | \href{mailto:joshfield999@gmail.com}{joshfield99@gmail.com} | 626.616.6320}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{Joshua Field}
+{\href{https://joshafield.com}{https://joshafield.com}}
+{\href{mailto:joshfield99@gmail.com}{joshfield99@gmail.com }\faEnvelope}
+{\href{http://github.com/joshField}{github.com/joshField }\faGithubSquare}
+{\href{http://linkedin.com/in/joshua-a-field}{linkedin.com/in/joshua-a-field }\faLinkedinSquare}
 
-% Education Section
-\section{Education}
-\runsubsection{Northeastern University}
-\descript{| Candidate for BS in Electrical \& Computer Engineering}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
+\hspace{-5mm}\runsubsection{Northeastern University}
+\position{| Candidate for BS in Electrical \& Computer Engineering}\\
 \vspace{0.5mm} 
-\location{GPA: \custombold{3.92} | Graduation Date : \custombold{April 2021}}
-\vspace{0.5mm}
-\begin{tightemize}
-\item[] \custombold{Relevant Courses:} Engineering Cornerstone 1 \& 2 | Calculus 2 | Differential Equations | Embedded Design
-\item[] \custombold{Clubs:} ChemE Car | IEEE | AIAA
-\end{tightemize}
-\sectionsep
+\body{
+\hspace{5 mm}\bodybold{GPA:} 3.88 | \bodybold{Graduation Date:} May 2021\\
+\hspace{5 mm}\bodybold{Relevant Courses:} Engineering Cornerstone 1 \& 2 | Calculus 2 | Differential Equations | Embedded Design \\
+\hspace{5 mm}\bodybold{Activities:} ChemE Car | IEEE | AIAA
+\vspace{1.5mm}
+}
 
 \runsubsection{Arcadia High School}
+\position{}\\
 \vspace{0.5mm} 
-\descript{}
-\location{GPA: \custombold{3.93} | SAT (old): \custombold{2120} | Graduation Date : \custombold{June 2017}}
+\body{
+\hspace{5 mm}\bodybold{GPA:} 3.93 | \bodybold{SAT:} 2120 | \bodybold{Graduation Date:} June 2017\\
+\hspace{5 mm}\bodybold{Relevant Courses:} AP Calculus AB | AP Physics C | AP Chemistry | AP Computer Science A | AP Comparative \\
+\hspace{36.8 mm}Government | AP English Literature \\
+\hspace{5 mm}\bodybold{Activities:} Boy Scouts | Marching Band Section Leader | Varsity Goalkeeper | Taekwondo 3rd Degree Black Belt
 \vspace{0.5mm}
-\begin{tightemize}
-\item[] \custombold{Relevant Courses:}AP Calculus AB | AP Physics C | AP Chemistry | AP Computer Science A | AP Comparative Government | AP English Literature
-\item[] \custombold{Activities: } Boy Scouts | Marching Band Section Leader | Varsity Goalkeeper | Taekwondo 3rd Degree Black Belt 
-\end{tightemize}
-\sectionsep
+}
 
-% Experience Section
-\section{Experience}
-\runsubsection{College of Engineering Connections Computer Lab}
-\descript{| Lab Assistant}
-\location{January 2018 – April 2018 | Boston, MA}
-\begin{tightemize}\item Run the head desk. Assist with general IT help.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
+\runsubsection{California Institute of Technology}
+\position{| Research Engineering Intern }
+\hfill\positiondate{May '18 - Aug '18}
+\technologies{Python, AWS, Arduino, Android Studio}
+\begin{tightemize}
+\body{
+\item Worked on a smart maitenance sensor network that monitored the treatment of waste water using an Arduino \& Raspberry  Pi
+\item Developed an Android app using Android Studio, NoSQL \& Amazon Web Services (DynamoDb,  IoT, Cognito, Lambda)
+}
 \end{tightemize}
-\sectionsep
+\vspace{1.5mm}
+
+\runsubsection{College of Engineering Connections Computer Lab}
+\position{| Lab Assistant}
+\hfill\positiondate{Jan '18 - Apr '18}
+\begin{tightemize}
+\body{
+\item Run the head desk. Assist with general IT help.
+}
+\end{tightemize}
+\vspace{1.5mm}
 
 \runsubsection{Northeastern University ResMail}
-\descript{| Mail Services Associate }
-\location{October 2017 – December 2017 | Boston, MA}
-\begin{tightemize}\item Sorted and delivered mail. Also audited \& updated the computerized \custombold{database.} 
+\position{| Mail Services Associate }
+\hfill\positiondate{Oct '17 - Dec '17}
+\begin{tightemize}
+\body{
+\item Sorted and delivered mail. Also audited \& updated the computerized database.
+}
 \end{tightemize}
-\sectionsep
-
-\runsubsection{Arcadia High School Marching Band}
-\descript{| Trumpet Section Leader }
-\location{August 2016 – June 2017 | Arcadia, CA}
-\begin{tightemize}\item Led trumpet section practices \& instructed peers and younger members. Also organized section events. 
-\end{tightemize}
-\sectionsep
+\vspace{1.5mm}
 
 \runsubsection{Johns Hopkins Engineering Innovation}
-\descript{| Summer Course}
-\location{June 2016 – August 2016 | Pasadena, CA}
+\position{| Summer Course}
+\hfill\positiondate{Jun '16 – Aug '16}
 \begin{tightemize}
-\item Used \custombold{truss analysis} to create the strongest spaghetti bridge.
-\item \custombold{Reverse engineered} a light sensing robot to create \custombold{logic tables} and program our own robots.
+\body{
+\item Used truss analysis to create the strongest spaghetti bridge.
+\item Reverse engineered a light sensing robot to create logic tables and program our own robots.
+}
 \end{tightemize}
-\sectionsep
 
-% Award Section
-\section{Awards}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
 \runsubsection{National Merit Commended Scholar}
-\descript{| 2017}
+\position{| 2017}
 \vspace{0.5mm}
 \begin{tightemize}
-\item[] Was awarded to the \custombold{top 3.3\%} of students nationally
+\body{
+\item Was awarded to the top 3.3\% of students nationally
+}
 \end{tightemize}
-\sectionsep
+\vspace{1.5mm}
 
 \runsubsection{Eagle Scout}
-\descript{| 2017}
+\position{| 2017}
 \vspace{0.5mm}
 \begin{tightemize}
-\item[] Was awarded the rank of \custombold{Eagle Scout} in February 2017. Led multiple troop meetings of \custombold{70+ scouts.}
+\body{
+\item Was awarded the rank of Eagle Scout in February 2017. Led multiple troop meetings of 70+ scouts.
+}
 \end{tightemize}
-\sectionsep
+\vspace{1.5mm}
 
 \runsubsection{AP Scholar with Distinction}
-\descript{| 2017}
+\position{| 2017}
 \vspace{0.5mm}
 \begin{tightemize}
-\item[] Was awarded for having higher than a 3.5 average AP test score for more than 5 tests.
+\body{
+\item Was awarded for having higher than a 3.5 average AP test score for more than 5 tests.
+}
 \end{tightemize}
-\sectionsep
 
-% Creates double column section
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills \hspace{2mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.4pt}}{}} 
+\body{
+\bodybold{Programming}\hspace{1mm} Java,\hspace{0.7mm} C++,\hspace{0.7mm} Python \hspace{1mm} \bodyit{Familiar with} C, \hspace{0.7mm}HTML, \hspace{0.7mm}MATLAB, \hspace{0.7mm}CSS \hspace{0.7mm}\latex \\
+
+\bodybold{Computer}\hspace{1mm} Android Studio, \hspace{0.7mm}AWS, \hspace{0.7mm}Simulink \hspace{0.7mm}SolidWorks, \hspace{0.7mm} AutoCAD, \hspace{0.7mm}Microsoft Office, \hspace{0.7mm}Adobe Photoshop \& Lightroom
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\arraystretch}{0}
+\section{Projects \hspace{2mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.4pt}}{}}
 \begin{tabularx}{\textwidth}{@{}XXl@{}@{}r@{}}
-\section{Projects} & \section{Skills} \\
-
-% Project Section
 \runsubsection{Piezoelectric Keyboard}
-\location{}
-\vspace{0.5mm}
+\position{} \\
 \technologies{C, Arduino, Solidworks, AutoCAD}\\
-\begin{tightemize}
-\item Used \custombold{piezoelectric sensors}. Built a \custombold{full-wave diode rectifier} \& coded an \custombold{Arduino} to measure the power generated.
-\end{tightemize}
-\sectionsep
+\body{
+ Used piezoelectric sensors attatched to a keyboard. Built a full-wave diode rectifier \& coded an Arduino to measure the power generated.
+}
 
-% Skills Section
 &
-\runsubsection{Programming}
-\location{}
-\vspace{0.5mm}
-\begin{tightemize}
-\item Java, C++ \\
-\item Familiar with C, Python, HTML, CSS, \LaTeX, Matlab
-\end{tightemize}
-\sectionsep
 
-\runsubsection{Computer}
-\location{}
-\vspace{0.5mm}
-\begin{tightemize}
-\item Simulink, SolidWorks, AutoCAD, Microsoft Office Suite, \\
-Adobe Photoshop, Adobe Lightroom
-\end{tightemize}
-\sectionsep
+\runsubsection{Wiimote Robotic Arm}
+\position{} \\
+\technologies{C++, Simulink, FPGA} \\
+\body{
+Used Simulink to generate PWM signals on a ZedBoard FPGA, which controlled servos in the arm. Used C++ to connect the bluetooth signals of a Wiimote to interact with the FPGA.
+}
+
 
 \end{tabularx}
-
 \end{document}
