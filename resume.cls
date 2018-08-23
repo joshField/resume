@@ -32,8 +32,9 @@
   \begin{tabularx}{\textwidth}{Xr}
        \begin{tabular}[x]{@{}l@{}}
           \hspace{-8mm}{\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{35pt}{10cm}\selectfont #1}
+          \vspace{1.5mm}
           {\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{35pt}{10cm}\selectfont #2}\\
-          \hspace{-8mm}{\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{20pt}{10cm}\selectfont #3}
+          \hspace{-6.5mm}{\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{10cm}\selectfont #3}
           \vspace{1.5mm}
       \end{tabular}
     &
