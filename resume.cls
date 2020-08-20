@@ -15,6 +15,8 @@
 \usepackage{titlesec}
 \usepackage{fontawesome}
 \usepackage{tabularx}
+\usepackage{fontspec}
+
 % Color definitions
 \definecolor{heading}{HTML}{606060}
 \definecolor{subheading}{HTML}{000000}
@@ -44,7 +46,7 @@
         {\fontsize{11pt}{15cm}\selectfont #5}\\
         {\fontsize{11pt}{15cm}\selectfont #6}\\
         {\fontsize{11pt}{15cm}\selectfont #7}
-      \end{tabular} 
+      \end{tabular}
     \end{tabularx}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}

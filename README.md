@@ -1,2 +1,5 @@
-# resume
-my resume coded in latex
+# Resume
+My resume formated in latex
+
+
+![resume](resume.png)
