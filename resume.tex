@@ -20,19 +20,19 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %     EDUCATION
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \vspace{-1mm}
+    \vspace{-1.5mm}
     \section{Education\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
     \hspace{-5mm}\runsubsection{Northeastern University}
     \position{| Candidate for BS, MS in Computer Engineering}\\
     \technologies{Boston, MA}\\
     \vspace{0.5mm}
     \body{
-    \hspace{5 mm}\bodybold{GPA:} 3.78 | \bodybold{Graduation Date:} May 2022 | 4th Year\\
-    \hspace{5 mm} Courses: Mobile \& Assistive Robotics | Parallel Processing | AI | Machine Learning | \\
-    \hspace{22mm} Robotics Sensing \& Navigation | Object Oriented Design | Computer Vision\\
-    \hspace{5 mm} Activities: AerospaceNU | NUAV Project Lead\\
-    \hspace{5 mm} Awards: Dean's List | NASA Space Apps Hackathon - Boston (1st Place) | Eagle Scout
-    \vspace{2mm}
+      \hspace{5 mm}\bodybold{GPA:} 3.81 | \bodybold{Graduation Date:} May 2022 (5th Year)\\
+      \hspace{5 mm}\bodybold{Courses:} Mobile \& Assistive Robotics | Parallel Processing | AI | Machine Learning | \\
+      \hspace{22mm} Robotics Sensing \& Navigation | Object Oriented Design | Computer Vision\\
+      \hspace{5 mm}\bodybold{Activities:} Northeastern Unmanned Aerial Vehicles (Founding Member)\\
+      \hspace{5 mm}\bodybold{Awards:} Dean's List | NASA Space Apps Hackathon - Boston (1st Place) | Eagle Scout
+      \vspace{2mm}
     }
 
     %devleoped, implemented
@@ -40,19 +40,28 @@
     %     EXPERIENCE
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \section{Experience\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
+    \runsubsection{Amazon Robotics}
+    \position{| Software Development Engineering Co-op }
+    \hfill\positiondate{Jan '21 - Jun '21}
+    \technologies{Boston, MA | Python, Java, AWS, Typescript}
+    \begin{tightemize}
+        \body{
+        \item Developed a package singulation detection solution, using Tensorflow to classify images of packages
+        \item Fully integrated the project with AWS (Sagemaker, GreengrassV2, Lambda, Cloudwatch)
+        }
+    \end{tightemize}
+    \vspace{1.5mm}
+
     \runsubsection{California Institute of Technology}
     \position{| Software Engineering Intern }
     \hfill\positiondate{Summer '18, '19 \& '20}
     \technologies{Pasadena, CA | Python, Java, AWS, Arduino, SQLite}
     \begin{tightemize}
         \body{
-        \item Developed a smart maintenance sensor network that monitors the treatment \\
-        of waste water using an Arduino \& Raspberry  Pi
-        \item Created predictive maintenance regression and classification models to predict \\
+        \item Developed a smart maintenance sensor network that monitors the treatment of waste water using an Arduino \& Raspberry  Pi
         the remaining useful life, and most likely root cause of a given failure
-        \item Implemented unsupervised anomaly detection models using clustering and autoencoder methods
-        \item Coded an Android app to monitor the sensor network with a backend of SQLite \\
-        \& Amazon Web Services (DynamoDB,  IoT, Cognito, Lambda, SNS)
+        \item Implemented supervised predictive maintenance classification and unsupervised anomaly detection models
+        \item Coded an Android app to monitor the sensor network with a backend of SQLite \& Amazon Web Services (DynamoDB,  IoT, Cognito, Lambda, SNS)
         }
     \end{tightemize}
     \vspace{1.5mm}
@@ -63,8 +72,7 @@
     \technologies{Woburn, MA | C++, Python, MATLAB}
     \begin{tightemize}
         \body{
-        \item Developed collaborative autonomy software for path planning missions, focusing\\on algorithm development and simulation testing
-        \item Worked on and tested in simulation Multi-UAV RF localization algorithms \& software
+        \item Developed collaborative autonomy software for path planning missions and\\Multi-UAV RF localization, focusing on algorithm development and simulation testing
         \item Created a graphical interface to visualize simulation log output using wxPython
         }
     \end{tightemize}
@@ -77,46 +85,51 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \section{Skills \hspace{2mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.4pt}}{}}
     \body{
-    \bodybold{Programming:}\hspace{1mm} C++,\hspace{0.7mm} Python,\hspace{0.7mm} MATLAB,\hspace{0.7mm} Java  \hspace{1mm} \bodybold{Familiar with:}C, \hspace{0.7mm}C\#\\
-    \vspace{1.5mm}
+      \bodybold{Languages:}
+      \hspace{1mm} C++,
+      \hspace{0.7mm} Python,
+      \hspace{0.7mm} MATLAB,
+      \hspace{0.7mm} Java
+      \hspace{1mm}
+      \bodybold{Familiar with:} C,
+      \hspace{0.7mm} Typescript\\
+      \vspace{1.5mm}
 
-    \bodybold{Libraries:}\hspace{1mm} OpenCV, \hspace{0.7mm} Scikit,\hspace{0.7mm} Pandas,\hspace{0.7mm} Keras \hspace{1mm}
-    \vspace{1.5mm}
-
-    \bodybold{Technology:}\hspace{1mm} ROS, \hspace{0.7mm}Android Studio, \hspace{0.7mm}AWS, \hspace{0.7mm}Unity, \hspace{0.7mm}SQLite, \hspace{0.7mm}Simulink, \hspace{0.7mm}SolidWorks}
-    \vspace{-.5mm}
-
+      \bodybold{Applications:}
+      \hspace{1mm} ROS/ROS2,
+      \hspace{0.7mm} Gazebo,
+      \hspace{0.7mm} Unreal Engine,
+      \hspace{0.7mm} Android Studio,
+      \hspace{0.7mm} AWS,
+      \hspace{0.7mm} Unity,
+      \hspace{0.7mm} SQLite
+    }
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %     PROJECTS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \renewcommand{\arraystretch}{0}
-    \section{Projects \hspace{2mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.4pt}}{}}
-    \begin{tabularx}{\textwidth}{@{}XXl@{}@{}r@{}}
-        \runsubsection{AeroNU Software}
-        \position{}
-        \hfill\positiondate{'19 - Present}\\
-        \technologies{Python, C++, OpenCV, ROS}\\
-        \begin{tightemize}
-            \body{
-            \item Created a complete Behavior Tree library for mission planning
-            \item Developed an autonomous platform with Dronekit \& ROS to perform complex missions
-            \item Successfully tested a mission for localizing a rocket in a field using RF sensors on a drone.
-            \item Worked on precision landing with ArUco markers
-            }
-        \end{tightemize}
+    \section{Projects\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
+    \runsubsection{AerospaceNU}
+    \position {| NUAV Software Lead}
+    \hfill\positiondate{'19 - Present}
+    \technologies{Python, C++, ROS2}
+    \begin{tightemize}
+        \body{
+        \item Created a complete Behavior Tree library for mission planning
+        \item Developed an autonomous platform with ROS \& PX4 to perform complex missions
+        \item Created an object classifier with a YOLOv3 architecture to recognize flight gates in the AlphaPilot competition
+        }
+    \end{tightemize}
+    \vspace{1.5mm}
 
-        &
-
-        \runsubsection{AeroNU AlphaPilot}
-        \position{}
-        \hfill\positiondate{Spring '19}\\
-        \technologies{Python, OpenCV, ROS} \\
-        \begin{tightemize}
-            \body{
-            \item Worked on quadrotor path planning and control models for racing in the FlightGoggles simulator
-            \item Created an object classifier with a YOLOv3 architecture to recognize flight gates
-            }
-        \end{tightemize}
-    \end{tabularx}
+    \runsubsection{DeepFlight}
+    \position {| CS4100}
+    \hfill\positiondate{Dec '20}
+    \technologies{Python, Unreal Engine}
+    \begin{tightemize}
+        \body{
+        \item Developed a double DQN to train a UAV to fly through an obstacle course given depth images
+        \item Used reinforcement learning environment with OpenAI Gym and Tensorflow
+        }
+    \end{tightemize}
 \end{document}
