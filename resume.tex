@@ -1,6 +1,4 @@
 % Joshua Field - Latex Resume
-% Version 2.0 (8/12/2018)
-
 \documentclass{resume}
 \pagenumbering{gobble}
 \begin{document}
@@ -10,7 +8,7 @@
     %     HEADER
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \namesection{}{Joshua Field}
-    {\href{http://joshafield.com}{https://joshafield.com}}
+    {\href{http://joshafield.com}{joshafield.com}}
     {\href{tel:1-626-616-6320}{626.616.6320 }\faPhoneSquare}
     {\href{mailto:joshfield99@gmail.com}{joshfield99@gmail.com }\faEnvelope}
     {\href{http://github.com/joshField}{github.com/joshField }\faGithubSquare}
@@ -20,28 +18,41 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %     EDUCATION
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \vspace{-1.5mm}
+    \vspace{-4mm}
     \section{Education\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
     \hspace{-5mm}\runsubsection{Northeastern University}
-    \position{| Candidate for BS, MS in Computer Engineering}\\
-    \technologies{Boston, MA}\\
+    \position{| BS \& MS in Computer Engineering}
+    \hfill\positiondate{May '22}
+    \technologies{Boston, MA | GPA: 3.88}\\
     \vspace{0.5mm}
     \body{
-      \hspace{5 mm}\bodybold{GPA:} 3.81 | \bodybold{Graduation Date:} May 2022 (5th Year)\\
-      \hspace{5 mm}\bodybold{Courses:} Mobile \& Assistive Robotics | Parallel Processing | AI | Machine Learning | \\
-      \hspace{22mm} Robotics Sensing \& Navigation | Object Oriented Design | Computer Vision\\
-      \hspace{5 mm}\bodybold{Activities:} Northeastern Unmanned Aerial Vehicles (Founding Member)\\
-      \hspace{5 mm}\bodybold{Awards:} Dean's List | NASA Space Apps Hackathon - Boston (1st Place) | Eagle Scout
-      \vspace{2mm}
+      \hspace{5 mm}\bodybold{Courses:}Field Robotics, GNSS Signals, Mobile Robotics, Assistive Robotics, Parallel Processing, AI,\\
+      \hspace{21.5 mm}Machine Learning, Robotics Sensing \& Navigation, Object Oriented Design, Computer Vision\\
+      \hspace{5 mm}\bodybold{Activities:}Northeastern Unmanned Aerial Vehicles (Founding Member, Software Lead)\\
+      \hspace{5 mm}\bodybold{Awards:}Gorlov Prize for Innovation (1st Place Capstone Project), Dean's List, Eagle Scout,\\
+      \hspace{21.5 mm}NASA Space Apps Hackathon - Boston (1st Place)
     }
 
     %devleoped, implemented
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %     EXPERIENCE
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2mm}
     \section{Experience\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
     \runsubsection{Amazon Robotics}
-    \position{| Software Development Engineering Co-op }
+    \position{| Software Development Engineer I}
+    \hfill\positiondate{Aug '22 - Jan '23}
+    \technologies{Boston, MA | Java, AWS, Typescript}
+    \begin{tightemize}
+        \body{
+        \item Developed metrics pipeline and infrastructure and deployed to 100s of production robotic workcells, worked with AWS (IoT, Lambda, Cloudwatch, Kinesis, CDK)
+        \item Contributed to team code reviews and supported customers with on-call responsibilities
+        }
+    \end{tightemize}
+    \vspace{1.5mm}
+
+    \runsubsection{Amazon Robotics}
+    \position{| Software Development Engineer Co-op}
     \hfill\positiondate{Jan '21 - Jun '21}
     \technologies{Boston, MA | Python, Java, AWS, Typescript}
     \begin{tightemize}
@@ -53,71 +64,57 @@
     \vspace{1.5mm}
 
     \runsubsection{California Institute of Technology}
-    \position{| Software Engineering Intern }
+    \position{| Software Engineer Intern }
     \hfill\positiondate{Summer '18, '19 \& '20}
     \technologies{Pasadena, CA | Python, Java, AWS, Arduino, SQLite}
     \begin{tightemize}
         \body{
         \item Developed a smart maintenance sensor network that monitors the treatment of waste water using an Arduino \& Raspberry  Pi
-        the remaining useful life, and most likely root cause of a given failure
+        the remaining useful life, and failure root cause
         \item Implemented supervised predictive maintenance classification and unsupervised anomaly detection models
-        \item Coded an Android app to monitor the sensor network with a backend of SQLite \& Amazon Web Services (DynamoDB,  IoT, Cognito, Lambda, SNS)
+        \item Built an Android app to monitor the sensor network with a backend of SQLite \& AWS (DynamoDB,  IoT, Cognito, Lambda, SNS)
         }
     \end{tightemize}
     \vspace{1.5mm}
 
     \runsubsection{Scientific Systems Company Inc.}
-    \position{| Software Co-op (Autonomy Group)}
+    \position{| Software Engineer Co-op}
     \hfill\positiondate{Jan '19 -Jun '19}
     \technologies{Woburn, MA | C++, Python, MATLAB}
     \begin{tightemize}
         \body{
-        \item Developed collaborative autonomy software for path planning missions and\\Multi-UAV RF localization, focusing on algorithm development and simulation testing
+        \item Developed collaborative autonomy software for path planning missions and Multi-UAV RF localization, focusing on algorithm development and simulation testing
         \item Created a graphical interface to visualize simulation log output using wxPython
         }
     \end{tightemize}
 
-    \vspace{-.5mm}
-
-
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %     SKILLS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2mm}
     \section{Skills \hspace{2mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.4pt}}{}}
     \body{
-      \bodybold{Languages:}
-      \hspace{1mm} C++,
-      \hspace{0.7mm} Python,
-      \hspace{0.7mm} MATLAB,
-      \hspace{0.7mm} Java
-      \hspace{1mm}
-      \bodybold{Familiar with:} C,
-      \hspace{0.7mm} Typescript\\
+      \bodybold{Languages:} C++, Python, MATLAB, Java, Typescript
+      \bodybold{Familiar with:} C
       \vspace{1.5mm}
 
-      \bodybold{Applications:}
-      \hspace{1mm} ROS/ROS2,
-      \hspace{0.7mm} Gazebo,
-      \hspace{0.7mm} Unreal Engine,
-      \hspace{0.7mm} Android Studio,
-      \hspace{0.7mm} AWS,
-      \hspace{0.7mm} Unity,
-      \hspace{0.7mm} SQLite
+      \bodybold{Applications:} ROS/ROS2, Gazebo, Tensorflow, OpenCV, Android Studio, AWS, SQLite
     }
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %     PROJECTS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2mm}
     \section{Projects\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
-    \runsubsection{AerospaceNU}
-    \position {| NUAV Software Lead}
-    \hfill\positiondate{'19 - Present}
+    \runsubsection{Swarm Carrier Capstone}
+    \position {| Software Lead}
+    \hfill\positiondate{Jun '19 - May '22}
     \technologies{Python, C++, ROS2}
     \begin{tightemize}
         \body{
-        \item Created a complete Behavior Tree library for mission planning
-        \item Developed an autonomous platform with ROS \& PX4 to perform complex missions
-        \item Created an object classifier with a YOLOv3 architecture to recognize flight gates in the AlphaPilot competition
+        \item Designed and field tested large octocoptor UAV for deployment and recovery of multiple UAVs 
+        \item ROS2 and PX4/RTPS architecture to support multi vehicle communication, simulation and path planning
+        \item Implemented autonomous free fall catching and precision landing with OpenCV ArUco markers
         }
     \end{tightemize}
     \vspace{1.5mm}
@@ -129,7 +126,7 @@
     \begin{tightemize}
         \body{
         \item Developed a double DQN to train a UAV to fly through an obstacle course given depth images
-        \item Used reinforcement learning environment with OpenAI Gym and Tensorflow
+        \item Used reinforcement learning environment with OpenAI Gym and Tensorflow, simulated in Unreal Engine
         }
     \end{tightemize}
 \end{document}

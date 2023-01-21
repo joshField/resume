@@ -22,7 +22,9 @@
 \definecolor{subheading}{HTML}{000000}
 \definecolor{position}{HTML}{606060}
 \definecolor{technologies}{HTML}{505050}
-\definecolor{body-text}{HTML}{030303}
+% \definecolor{body-text}{HTML}{030303}
+\definecolor{body-text}{HTML}{505050}
+\definecolor{body-text-bold}{HTML}{050505}
 
 % Set main fonts
 \defaultfontfeatures{Ligatures=TeX}
@@ -56,13 +58,13 @@
 \scshape\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{18pt}{26pt}\selectfont \raggedright}{}{0em}{}
 
 % Body command
-\newcommand{\body}[1]{\color{body-text}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{12pt}{14pt} \selectfont {#1\\} \normalfont}
+\newcommand{\body}[1]{\color{body-text}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{11pt}{13pt} \selectfont {#1\\} \normalfont}
 
 % Bodybold command
-\newcommand{\bodybold}[1]{\color{body-text}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{14pt} \selectfont {#1} \normalfont}
+\newcommand{\bodybold}[1]{\color{body-text-bold}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{11pt}{13pt} \selectfont {#1} \normalfont}
 
 % Bodyit command
-\newcommand{\bodyit}[1]{\color{body-text}\fontspec[Path = fonts/lato/]{Lato-RegIta}\fontsize{12pt}{14pt} \selectfont {#1} \normalfont}
+\newcommand{\bodyit}[1]{\color{body-text}\fontspec[Path = fonts/lato/]{Lato-RegIta}\fontsize{11pt}{13pt} \selectfont {#1} \normalfont}
 
 % Subsections command
 \newcommand{\runsubsection}[1]{\color{subheading}
