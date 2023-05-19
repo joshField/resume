@@ -1,0 +1,133 @@
+% Joshua Field - Latex Resume
+\documentclass{resume}
+\pagenumbering{gobble}
+\begin{document}
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     HEADER
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \namesection{}{Joshua Field}
+    {\href{http://joshafield.com}{joshafield.com}}
+    {\href{tel:1-626-616-6320}{626.616.6320 }\faPhoneSquare}
+    {\href{mailto:joshfield99@gmail.com}{joshfield99@gmail.com }\faEnvelope}
+    {\href{http://github.com/joshField}{github.com/joshField }\faGithubSquare}
+    {\href{http://linkedin.com/in/joshafield}{linkedin.com/in/joshafield }\faLinkedinSquare}
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EDUCATION
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-4mm}
+    \section{Education\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
+    \hspace{-5mm}\runsubsection{Northeastern University}
+    \position{| BS \& MS in Computer Engineering}
+    \hfill\positiondate{May '22}
+    \technologies{Boston, MA | GPA: 3.88}\\
+    \vspace{0.5mm}
+    \body{
+      \hspace{5 mm}\bodybold{Courses:}Field Robotics, GNSS Signals, Mobile Robotics, Assistive Robotics, Parallel Processing, AI,\\
+      \hspace{21.5 mm}Machine Learning, Robotics Sensing \& Navigation, Object Oriented Design, Computer Vision\\
+      \hspace{5 mm}\bodybold{Activities:}Northeastern Unmanned Aerial Vehicles (Founding Member, Software Lead)\\
+      \hspace{5 mm}\bodybold{Awards:}Gorlov Prize for Innovation (1st Place Capstone Project), Dean's List, Eagle Scout,\\
+      \hspace{21.5 mm}NASA Space Apps Hackathon - Boston (1st Place)
+    }
+
+    %devleoped, implemented
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EXPERIENCE
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2mm}
+    \section{Experience\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
+    \runsubsection{Amazon Robotics}
+    \position{| Software Development Engineer I}
+    \hfill\positiondate{Aug '22 - Jan '23}
+    \technologies{Boston, MA | Java, AWS, Typescript}
+    \begin{tightemize}
+        \body{
+        \item Developed features for robotic workcells to orchestrate the movement of material throughout a warehouse
+        \item Designed and implemented a metrics pipeline and infrastructure using AWS to monitor robotic workcells
+        \item Contributed to team code reviews and supported customers with on-call responsibilities
+        }
+    \end{tightemize}
+    \vspace{1.5mm}
+
+    \runsubsection{Amazon Robotics}
+    \position{| Software Development Engineer Co-op}
+    \hfill\positiondate{Jan '21 - Jun '21}
+    \technologies{Boston, MA | Python, Java, AWS, Typescript}
+    \begin{tightemize}
+        \body{
+        \item Developed a package singulation detection solution, using Tensorflow to classify images of packages
+        \item Fully integrated the project with AWS (Sagemaker, GreengrassV2, Lambda, Cloudwatch)
+        }
+    \end{tightemize}
+    \vspace{1.5mm}
+
+    \runsubsection{California Institute of Technology}
+    \position{| Software Engineer Intern }
+    \hfill\positiondate{Summer '18, '19 \& '20}
+    \technologies{Pasadena, CA | Python, Java, AWS, Arduino, SQLite}
+    \begin{tightemize}
+        \body{
+        \item Developed a smart maintenance sensor network that monitors the treatment of waste water using an Arduino \& Raspberry  Pi
+        the remaining useful life, and failure root cause
+        \item Implemented supervised predictive maintenance classification and unsupervised anomaly detection models
+        \item Built an Android app to monitor the sensor network with a backend of SQLite \& AWS
+        }
+    \end{tightemize}
+    \vspace{1.5mm}
+
+    \runsubsection{Scientific Systems Company Inc.}
+    \position{| Software Engineer Co-op}
+    \hfill\positiondate{Jan '19 -Jun '19}
+    \technologies{Woburn, MA | C++, Python, MATLAB}
+    \begin{tightemize}
+        \body{
+        \item Developed collaborative autonomy software for path planning missions and Multi-UAV RF localization, focusing on algorithm development and simulation testing
+        \item Created a graphical interface to visualize simulation log output using wxPython
+        }
+    \end{tightemize}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     SKILLS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2mm}
+    \section{Skills \hspace{2mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.4pt}}{}}
+    \body{
+      \bodybold{Languages:} C++, Python, MATLAB, Java, Typescript
+      \bodybold{Familiar with:} C
+      \vspace{1.5mm}
+
+      \bodybold{Applications:} ROS/ROS2, Gazebo, Tensorflow, Numpy, Pandas, OpenCV, Android Studio, AWS, SQLite
+    }
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     PROJECTS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2mm}
+    \section{Projects\hspace{2.5mm}\texorpdfstring{\raisedrulefill[0.6ex]{0.25pt}}{}}
+    \runsubsection{Swarm Carrier Capstone}
+    \position {| Software Lead}
+    \hfill\positiondate{Jun '19 - May '22}
+    \technologies{Python, C++, ROS2}
+    \begin{tightemize}
+        \body{
+        \item Designed and field tested large octocoptor UAV for deployment and recovery of multiple UAVs 
+        \item ROS2 and PX4/RTPS architecture to support multi vehicle communication, simulation and path planning
+        \item Implemented autonomous free fall catching and precision landing with OpenCV ArUco markers
+        }
+    \end{tightemize}
+    \vspace{1.5mm}
+
+    \runsubsection{Autonomous Car Algorithms}
+    \position {| EECE7150}
+    \hfill\positiondate{Apr '22}
+    \technologies{Python, C++, ROS}
+    \begin{tightemize}
+        \body{
+        \item Calibrated and collected data from fully equipped autonomous car sensors (GPS, IMU, Cameras, LIDAR)
+        \item Studied \& compared modern perception and localization algorithms on collected data (ORB-SLAM, LeGO-LOAM, etc.)
+        }
+    \end{tightemize}
+\end{document}
